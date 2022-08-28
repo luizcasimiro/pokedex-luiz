@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 import { searchPokemon } from '../features/search/searchSlice';
 import Header from '../components/Header';
-// import CardSearch from '../components/CardSearch';
+import CardSearch from '../components/CardSearch';
 
 function Search() {
   const dispatch = useDispatch();
@@ -71,7 +71,7 @@ function Search() {
             Search
           </button>
 
-          {/* <CardSearch id={pokeData.id} name={pokeData.name} sprite={pokeData.sprites.front_default} /> */}
+          <CardSearch id={pokeData.id} name={pokeData.name} sprite={pokeData.sprites.front_default} />
 
         </div>
       );
