@@ -1,5 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router";
+import BtnPokemonList from "./BtnPokemonList";
+
 function Header() {
   const email = JSON.parse(localStorage.getItem('user'));
   const navigate = useNavigate();
@@ -28,6 +30,8 @@ function Header() {
       <nav>
 
         <button type="button" onClick={() => navigate('/home')} >Home</button>
+
+        <BtnPokemonList />
 
       </nav>
 
