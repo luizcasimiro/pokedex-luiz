@@ -19,7 +19,7 @@ const searchSlice = createSlice({
 
   extraReducers: (builder) => {
     builder.addCase(searchPokemon.pending, (state) => {
-      state.pokeData = false
+      state.pokeData = 'pending'
     });
     builder.addCase(searchPokemon.fulfilled, (state, action) => {
       state.pokeData = action.payload

@@ -23,7 +23,6 @@ function Search() {
     if (!pokeData) {
       return (
         <div>
-
           <Header />
 
           <input
@@ -46,13 +45,35 @@ function Search() {
             Type the name or id <br />
             of the pokémon you want to search.
           </p>
+        </div>
+      );
+    } else if (pokeData === 'pending') {
+      return (
+        <div>
+          <Header />
 
+          <input
+            type='text'
+            placeholder='Pokémon name or id'
+            value={value}
+            onChange={(event) => handleChange(event)}
+          >
+          </input>
+
+          <button
+            type='button'
+            disabled={searchDisabled}
+            onClick={() => dispatch(searchPokemon(value))}
+          >
+            Search
+          </button>
+
+          <div>Loading...</div>
         </div>
       );
     } else {
       return (
         <div>
-
           <Header />
 
           <input
@@ -72,14 +93,12 @@ function Search() {
           </button>
 
           <CardSearch id={pokeData.id} name={pokeData.name} sprite={pokeData.sprites.front_default} />
-
         </div>
       );
     }
   } catch (error) {
     return (
       <div>
-
         <Header />
 
         <input
@@ -101,7 +120,6 @@ function Search() {
         <div>
           Pokémon Not Found
         </div>
-
       </div>
     );
   }
