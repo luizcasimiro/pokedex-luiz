@@ -118,3 +118,5 @@ b) Evolução: A PokeApi também possui informações sobre os passos de evoluç
 2. Location Areas: Seria interessante mostrar os mapas onde os pokémon podem ser encontrados nos jogos. Endpoint a ser utilizado: https://pokeapi.co/api/v2/location-area/{id-or-name}/.
 
 3. Diferentes idiomas: Por se tratar de uma aplicação relativamente pequena, seria possível traduzir os textos para outros idiomas.  
+
+4. Implementação de testes: Testes apontam para a quebra de funcionalidades. Isto é imortante para que nós desenvolvedores possamos estar cientes de eventuais quebras de algumas funcionalidades enquanto desenvolvemos outras. Além disso, testes exigem que nós desenvolvedores nos coloquemos no lugar do usuário e simulemos seu comportamento.   
