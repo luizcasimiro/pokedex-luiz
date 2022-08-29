@@ -36,26 +36,29 @@ function CardSearch({ id, name, sprite }) {
   }
 
   return (
-    <div>
+    <div className='border rounded-md border-blue-800 py-4 px-14 mt-4'>
 
       <div>
         <img src={sprite} alt='sprite' ></img>
       </div>
 
-      <div>
+      <div className='flex justify-center'>
         {id}
       </div>
 
-      <div>
+      <div className='flex justify-center'>
         {name}
       </div>
 
-      <button
-        type='button'
-        onClick={() => handleCatch()}
-      >
-        Catch
-      </button>
+      <div className='flex justify-center mt-8'>
+        <button
+          className='rounded-md py-2 px-6 uppercase text-white bg-orange-500 font-bold text-sm'
+          type='button'
+          onClick={() => handleCatch()}
+        >
+          Catch
+        </button>
+      </div>
 
     </div>
 

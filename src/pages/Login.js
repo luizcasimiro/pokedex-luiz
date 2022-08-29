@@ -43,24 +43,33 @@ function Login() {
   }, [email, password]);
 
   return (
-    <section>
+    <div>
 
-      <h1>Pokédex</h1>
+      <h1 className='flex justify-center mt-32 mb-12 text-3xl uppercase font-bold text-blue-800'>
+        Pokédex
+      </h1>
 
-      <input
-        type="email"
-        placeholder="Email"
-        onChange={handleEmail}
-      />
+      <div className='flex justify-center my-4'>
+        <input
+          className='border border-blue-800 rounded-md'
+          type="email"
+          placeholder="email"
+          onChange={handleEmail}
+        />
+      </div>
 
-      <input
-        type="password"
-        placeholder="Password"
-        onChange={handlePassword}
-      />
+      <div className='flex justify-center my-4'>
+        <input
+          className='border border-blue-800 rounded-md'
+          type="password"
+          placeholder="password"
+          onChange={handlePassword}
+        />
+      </div>
 
-      <div className="margin-five d-grid gap-2">
+      <div className='flex justify-center mt-14'>
         <button
+          className='border border-blue-800 bg-blue-700 uppercase text-white rounded-md py-2 px-4 disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-300 font-bold'
           type="button"
           disabled={loginDisabled}
           onClick={handleLogin}
@@ -69,7 +78,7 @@ function Login() {
         </button>
       </div>
 
-    </section>
+    </div>
   );
 }
 

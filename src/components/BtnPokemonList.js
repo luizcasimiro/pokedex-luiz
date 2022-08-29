@@ -6,7 +6,10 @@ function ButtonList() {
 
   return (
     <div>
-      <button type="button" onClick={() => navigate('/list')} >Pokémon List</button>
+      <button
+        className="border-b border-gray-800"
+        type="button"
+        onClick={() => navigate('/list')} >List</button>
     </div>
   )
 }

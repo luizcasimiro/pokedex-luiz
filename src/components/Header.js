@@ -11,27 +11,27 @@ function Header() {
   return (
     <div>
 
-      <div>
+      <div className="flex justify-evenly items-center p-3 bg-blue-800 text-white font-bold text-sm">
 
-        <h1>POKÉDEX</h1>
-
-        <span >
+        <div>
           {email ? `${email}` : `Welcome!`}
-        </span>
+        </div>
 
-        <span>
-          <button
-            type="button"
-            onClick={() => navigate('/')} >
-            Logout
-          </button>
-        </span>
+        <button
+          className="border-b border-white"
+          type="button"
+          onClick={() => navigate('/')} >
+          Logout
+        </button>
 
       </div>
 
-      <nav>
+      <nav className="flex justify-evenly p-3 bg-blue-100">
 
-        <button type="button" onClick={() => navigate('/home')} >Home</button>
+        <button
+          className="border-b border-gray-800"
+          type="button"
+          onClick={() => navigate('/home')} >Home</button>
 
         <BtnPokemonList />
         <BtnSearchPokemon />

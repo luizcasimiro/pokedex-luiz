@@ -25,26 +25,27 @@ function Search() {
         <div>
           <Header />
 
-          <input
-            type='text'
-            placeholder='Pokémon name or id'
-            value={value}
-            onChange={(event) => handleChange(event)}
-          >
-          </input>
+          <div className='flex justify-center m-6'>
+            <input
+              className='border border-blue-800 text-center p-2 rounded-md mt-8'
+              type='text'
+              placeholder='Pokémon name or id'
+              value={value}
+              onChange={(event) => handleChange(event)}
+            >
+            </input>
+          </div>
 
-          <button
-            type='button'
-            disabled={searchDisabled}
-            onClick={() => dispatch(searchPokemon(value))}
-          >
-            Search
-          </button>
-
-          <p>
-            Type the name or id <br />
-            of the pokémon you want to search.
-          </p>
+          <div className='flex justify-center'>
+            <button
+              className='border border-blue-800 bg-blue-700 uppercase text-white rounded-md py-2 px-4 disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-300 font-bold text-sm'
+              type='button'
+              disabled={searchDisabled}
+              onClick={() => dispatch(searchPokemon(value))}
+            >
+              Search
+            </button>
+          </div>
         </div>
       );
     } else if (pokeData === 'pending') {
@@ -52,21 +53,27 @@ function Search() {
         <div>
           <Header />
 
-          <input
-            type='text'
-            placeholder='Pokémon name or id'
-            value={value}
-            onChange={(event) => handleChange(event)}
-          >
-          </input>
+          <div className='flex justify-center m-6'>
+            <input
+              className='border border-blue-800 text-center p-2 rounded-md mt-8'
+              type='text'
+              placeholder='Pokémon name or id'
+              value={value}
+              onChange={(event) => handleChange(event)}
+            >
+            </input>
+          </div>
 
-          <button
-            type='button'
-            disabled={searchDisabled}
-            onClick={() => dispatch(searchPokemon(value))}
-          >
-            Search
-          </button>
+          <div className='flex justify-center'>
+            <button
+              className='border border-blue-800 bg-blue-700 uppercase text-white rounded-md py-2 px-4 disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-300 font-bold text-sm'
+              type='button'
+              disabled={searchDisabled}
+              onClick={() => dispatch(searchPokemon(value))}
+            >
+              Search
+            </button>
+          </div>
 
           <div>Loading...</div>
         </div>
@@ -76,23 +83,31 @@ function Search() {
         <div>
           <Header />
 
-          <input
-            type='text'
-            placeholder='Pokémon name or id'
-            value={value}
-            onChange={(event) => handleChange(event)}
-          >
-          </input>
+          <div className='flex justify-center m-6'>
+            <input
+              className='border border-blue-800 text-center p-2 rounded-md mt-8'
+              type='text'
+              placeholder='Pokémon name or id'
+              value={value}
+              onChange={(event) => handleChange(event)}
+            >
+            </input>
+          </div>
 
-          <button
-            type='button'
-            disabled={searchDisabled}
-            onClick={() => dispatch(searchPokemon(value))}
-          >
-            Search
-          </button>
+          <div className='flex justify-center'>
+            <button
+              className='border border-blue-800 bg-blue-700 uppercase text-white rounded-md py-2 px-4 disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-300 font-bold text-sm'
+              type='button'
+              disabled={searchDisabled}
+              onClick={() => dispatch(searchPokemon(value))}
+            >
+              Search
+            </button>
+          </div>
 
-          <CardSearch id={pokeData.id} name={pokeData.name} sprite={pokeData.sprites.front_default} />
+          <div className='flex justify-center mt-10'>
+            <CardSearch id={pokeData.id} name={pokeData.name} sprite={pokeData.sprites.front_default} />
+          </div>
         </div>
       );
     }
@@ -101,21 +116,27 @@ function Search() {
       <div>
         <Header />
 
-        <input
-          type='text'
-          placeholder='Pokémon name or id'
-          value={value}
-          onChange={(event) => handleChange(event)}
-        >
-        </input>
+        <div className='flex justify-center m-6'>
+          <input
+            className='border border-blue-800 text-center p-2 rounded-md mt-8'
+            type='text'
+            placeholder='Pokémon name or id'
+            value={value}
+            onChange={(event) => handleChange(event)}
+          >
+          </input>
+        </div>
 
-        <button
-          type='button'
-          disabled={searchDisabled}
-          onClick={() => dispatch(searchPokemon(value))}
-        >
-          Search
-        </button>
+        <div className='flex justify-center'>
+          <button
+            className='border border-blue-800 bg-blue-700 uppercase text-white rounded-md py-2 px-4 disabled:border-gray-200 disabled:bg-gray-100 disabled:text-gray-300 font-bold text-sm'
+            type='button'
+            disabled={searchDisabled}
+            onClick={() => dispatch(searchPokemon(value))}
+          >
+            Search
+          </button>
+        </div>
 
         <div>
           Pokémon Not Found

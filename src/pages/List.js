@@ -31,22 +31,24 @@ function List() {
 
           <Header />
 
-          <table>
-            <thead>
-              <tr>
-                <td>ID</td>
-                <td>NAME</td>
-              </tr>
-            </thead>
-            <tbody>
-              {list.pokemonList.results.map(pokeItem => (
-                <tr key={pokeItem.name}>
-                  <td>{pokeItem.url.split('/')[6]} </td>
-                  <td>{pokeItem.name} </td>
+          <div className='flex justify-center'>
+            <table>
+              <thead>
+                <tr>
+                  <td>ID</td>
+                  <td>NAME</td>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              </thead>
+              <tbody>
+                {list.pokemonList.results.map(pokeItem => (
+                  <tr key={pokeItem.name}>
+                    <td>{pokeItem.url.split('/')[6]} </td>
+                    <td>{pokeItem.name} </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
 
         </div>
 

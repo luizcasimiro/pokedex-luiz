@@ -6,7 +6,10 @@ function BtnSearchPokemon() {
 
   return (
     <div>
-      <button type="button" onClick={() => navigate('/search')} >Search Pokémon</button>
+      <button
+        className="border-b border-gray-800"
+        type="button"
+        onClick={() => navigate('/search')} >Search</button>
     </div>
   )
 }

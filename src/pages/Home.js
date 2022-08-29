@@ -11,11 +11,32 @@ function Home() {
 
       <Header />
 
-      <h1>Welcome to your Pokédex!</h1>
+      <h1 className="flex justify-center p-6 font-bold">
+        Welcome to your Pokédex!
+      </h1>
 
-      To see a list of existent pokémon, go to <BtnPokemonList />
-      To search for a new pokémon, go to <BtnSearchPokemon />
-      To see all the pokémon you have, go to <BtnMyPokemon />
+      <p className=" flex justify-center mt-4 mb-2 mx-8">
+        List of existent pokémon:
+      </p>
+
+      <div className="flex justify-center mb-10">
+        <BtnPokemonList />
+      </div>
+
+      <p className=" flex justify-center mt-4 mb-2 mx-8">
+        Search for a new pokémon:
+      </p>
+
+      <div className="flex justify-center mb-10">
+        <BtnSearchPokemon />
+      </div>
+
+      <p className=" flex justify-center mt-4 mb-2 mx-8">
+        See all the pokémon you have:
+      </p>
+      <div className="flex justify-center mb-10">
+        <BtnMyPokemon />
+      </div>
 
     </div>
   );

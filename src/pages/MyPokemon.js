@@ -24,20 +24,23 @@ function MyPokemon() {
         <Header />
 
         <div>
-          {myPokemon.map(poke => <CardDetails
-            key={poke.id}
-            abilities={poke.abilities}
-            attack={poke.attack}
-            defense={poke.defense}
-            height={poke.height}
-            hp={poke.hp}
-            id={poke.id}
-            name={poke.name}
-            speed={poke.speed}
-            sprite={poke.sprite}
-            types={poke.types}
-            weight={poke.weight}
-          />)}
+          {myPokemon.map(poke =>
+            <div key={poke.id} className='flex justify-center' >
+              <CardDetails
+                abilities={poke.abilities}
+                attack={poke.attack}
+                defense={poke.defense}
+                height={poke.height}
+                hp={poke.hp}
+                id={poke.id}
+                name={poke.name}
+                speed={poke.speed}
+                sprite={poke.sprite}
+                types={poke.types}
+                weight={poke.weight}
+              />
+            </div>
+          )}
         </div>
 
       </div>
