@@ -56,7 +56,7 @@ As informações dos pokémon foram obtidas da [PokéApi](https://pokeapi.co/doc
 
 
 
-## Páginas
+## Descrição das Páginas
 
 A aplicação foi desenvolvida com cinco páginas:
 
