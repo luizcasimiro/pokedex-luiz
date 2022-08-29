@@ -1,6 +1,6 @@
 # Teste Prático Frontend Irricontrol – Luiz Casimiro
 
-Desafio técnico realizado como parte do processo seletivo da Irricontrol. O desafio consistiu em desenvolver uma Pokédex: aplicação web que simula a busca e captura de diferentes pokémon. A aplicação foi feita com [React](https://reactjs.org/). O gerenciamento de estado global foi feto com [Redux](https://redux-toolkit.js.org/). A estilização foi feita com [TailwindCSS](https://tailwindcss.com/).
+Desafio técnico realizado como parte do processo seletivo da [Irricontrol](https://irricontrol.com.br/home/). O desafio consistiu em desenvolver uma Pokédex: aplicação web que simula a busca e captura de diferentes pokémon. A aplicação foi feita com [React](https://reactjs.org/). O gerenciamento de estado global foi feto com [Redux](https://redux-toolkit.js.org/). A estilização foi feita com [TailwindCSS](https://tailwindcss.com/).
 
 
 
@@ -13,9 +13,9 @@ O deploy da aplicação foi feito na plataforma [Heroku](https://www.heroku.com)
 ```
 
 
-## Rodando a aplicação em seu computador
+## Rodando a aplicação no seu computador
 
-Para rodar a aplicação localmente na sua máqina, é preciso clonar o projeto e instalar suas dependências. O projeto se encontra em um [repositório remoto do github](https://github.com/luizcasimiro/pokedex-luiz). Para cloná-lo, certifique-se de que você tem o [git](https://github.com/git-guides/install-git) instalado, e então execute um dos comandos abaixo no bash (linux e mac) ou cmd/powershell (windows):
+Para rodar a aplicação localmente na sua máqina, é necessário clonar o projeto e instalar suas dependências. O projeto se encontra em um [repositório remoto do github](https://github.com/luizcasimiro/pokedex-luiz). Para cloná-lo, certifique-se de que você tem o [git](https://github.com/git-guides/install-git) instalado, e então execute um dos comandos abaixo no bash (linux e mac) ou cmd/powershell (windows):
 
 Em SSH:
 ```bash
@@ -33,7 +33,7 @@ Depois de clonar o repositório, entre na pasta que você acabou de clonar com o
   cd pokedex-luiz
 ```
 
-(Aqui é importante que você se certifique que você tem a versão mais atualizada do [NodeJS LTS](https://nodejs.org/en/). Você pode verificar a versão que você tem instalada na sua máquina digitando no bash ou powershell o comando: node --version)
+(Aqui é importante que você se certifique de que você tem a versão mais atualizada do [NodeJS LTS](https://nodejs.org/en/). Você pode verificar a versão que você tem instalada na sua máquina digitando no bash ou powershell o comando: node --version)
 
 
 Uma vez dentro da pasta, instale as dependências do projeto com o comando abaixo:
@@ -72,6 +72,7 @@ A aplicação foi desenvolvida com cinco páginas:
 A página de Login recebe os inputs de email e senha. O email deve seguir a estrutura example@example.com e a senha deve ter no mínimo seis caracteres. O botão LOGIN só é habilitado caso email e senha sejam válidos. Ao clicar no botão LOGIN, o usuário é direcionado para a Home e o email é salvo no Local Storage. O email é então mostrado no Header de todas as páginas. 
 
 
+![login](./images-readme/01-login.png)
 
 
 #### Página Home
@@ -79,6 +80,7 @@ A página de Login recebe os inputs de email e senha. O email deve seguir a estr
 Nesta página, o usuário encontra informações sobre o que é possível fazer na aplicação. Ele tem a opção de ir para a página List e ver uma lista com todos os pokémon existentes; ir para a página Search e procurar por diferentes pokémon; ou ainda ir para a página MyPokémon, onde encontra seus pokémon capturados. Os botões para cada uma dessas páginas estão presentes na página Home, bem como no Header de todas as páginas.
 
 
+![home](./images-readme/02-home.png)
 
 
 #### Página List
@@ -86,6 +88,7 @@ Nesta página, o usuário encontra informações sobre o que é possível fazer 
 Assim que esta página é renderizada, uma requisição é feita para o endpoint https://pokeapi.co/api/v2/pokemon/?offset=0&limit=1154. Este endpoint retorna, entre outras informações, um array com 1154 objetos. Cada objeto contém o nome e a url de cada um dos pokémon atualmente existentes. Estas informações são setadas no estado pokemonList. Posteriormente, estas informações são lidas pelo componente da página List, o qual renderiza uma lista com o id e o nome de cada pokémon.
 
 
+![list](./images-readme/03-list.png)
 
 
 #### Página Search
@@ -93,6 +96,7 @@ Assim que esta página é renderizada, uma requisição é feita para o endpoint
 Aqui o usuário pode buscar por qualquer pokémon existente na página List. Ao digitar o nome ou id do pokémon no input, e clicar no botão SEARCH (o qual só é habilitado se algo for digitado no input), uma requisição é feita para o endpoint https://pokeapi.co/api/v2/pokemon/{id-or-name}/. Este endpoint retorna um objeto com todas as informações pertinentes ao pokémon buscado. Estas informações são setadas no estado pokeData. Posteriormente, estas informações são lidas pelo componente da página Search, o qual renderiza um card com a imagem, id, e nome do pokémon. Dentro do card também é renderizado o botão CATCH. Ao clicar neste botão, o pokémon buscado é “capturado”, ou seja, ele é salvo no Local Storage e posteriormente lido pelo componente da página MyPokémon.
 
 
+![search](./images-readme/04-search.png)
 
 
 #### Página MyPokémon
@@ -100,6 +104,7 @@ Aqui o usuário pode buscar por qualquer pokémon existente na página List. Ao 
 Ao renderizar, o componente da página MyPokémon lê as informações de todos os pokémon capturados no Local Storage e renderiza um card para cada pokémon com informações como imagem, id, nome, tipos, habilidades, peso, altura, hit points, ataque, defesa, e velocidade. 
 
 
+![mypokemon](./images-readme/05-mypokemon.png)
 
 
 ## Melhorias futuras
