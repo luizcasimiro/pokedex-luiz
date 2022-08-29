@@ -119,4 +119,4 @@ b) Evolução: A PokeApi também possui informações sobre os passos de evoluç
 
 3. Diferentes idiomas: Por se tratar de uma aplicação relativamente pequena, seria possível traduzir os textos para outros idiomas.  
 
-4. Implementação de testes: Testes apontam para a quebra de funcionalidades. Isto é imortante para que nós desenvolvedores possamos estar cientes de eventuais quebras de algumas funcionalidades enquanto desenvolvemos outras. Além disso, testes exigem que nós desenvolvedores nos coloquemos no lugar do usuário e simulemos seu comportamento.   
+4. Implementação de testes: Testes apontam para a quebra de funcionalidades. Isto é importante para que nós desenvolvedores possamos estar cientes de eventuais quebras de algumas funcionalidades enquanto desenvolvemos outras. Além disso, testes exigem que nós desenvolvedores nos coloquemos no lugar do usuário e simulemos seu comportamento.   
