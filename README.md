@@ -33,7 +33,7 @@ Depois de clonar o repositório, entre na pasta que você acabou de clonar com o
   cd pokedex-luiz
 ```
 
-(Aqui é importante que você se certifique de que você tem a versão mais atualizada do [NodeJS LTS](https://nodejs.org/en/). Você pode verificar a versão que você tem instalada na sua máquina digitando no bash ou powershell o comando: node --version)
+(Aqui é importante que você se certifique de que você tem a versão mais atualizada do [NodeJS LTS](https://nodejs.org/en/). Você pode verificar a versão que você tem instalada na sua máquina digitando no bash ou cmd/powershell o comando: node --version)
 
 
 Uma vez dentro da pasta, instale as dependências do projeto com o comando abaixo:
