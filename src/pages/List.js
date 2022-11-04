@@ -29,7 +29,9 @@ function List() {
       return (
         <div>
 
-          <Header />
+          <div className='sticky top-0'>
+            <Header />
+          </div>
 
           <div className='flex justify-center'>
             <table>

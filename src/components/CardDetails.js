@@ -3,7 +3,7 @@ import React from 'react'
 function CardDetails({ abilities, attack, defense, height, hp, id, name, speed, sprite, types, weight }) {
 
   return (
-    <div className='border rounded-md border-blue-800 p-5 m-5'>
+    <div className='border rounded-md border-blue-800 p-5 m-5 w-96'>
 
       <div className='flex justify-center'>
         <img src={sprite} alt='sprite' ></img>

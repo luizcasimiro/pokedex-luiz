@@ -9,9 +9,11 @@ function MyPokemon() {
     return (
       <div>
 
-        <Header />
+        <div className='sticky top-0'>
+          <Header />
+        </div>
 
-        <p>
+        <p className="flex justify-center mt-20 mb-2 mx-8">
           You don't have any pokémon yet.
         </p>
 
@@ -21,7 +23,9 @@ function MyPokemon() {
     return (
       <div>
 
-        <Header />
+        <div className='sticky top-0'>
+          <Header />
+        </div>
 
         <div>
           {myPokemon.map(poke =>
