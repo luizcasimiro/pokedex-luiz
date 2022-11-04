@@ -9,7 +9,7 @@ Desafio técnico realizado como parte do processo seletivo da [Irricontrol](http
 O deploy da aplicação foi feito na plataforma [Heroku](https://www.heroku.com), e pode ser visto no link: 
 
 ```bash
-   https://pokedexluiz.herokuapp.com/
+   https://pokedex-luiz.vercel.app/
 ```
 
 
